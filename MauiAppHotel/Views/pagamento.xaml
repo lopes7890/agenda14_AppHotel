@@ -15,7 +15,7 @@
 
                 <Picker x:Name="pck_pagamento"
                 Title="Selecione uma opção"
-                ItemDisplayBinding="{Binding Descricao}"/>
+                ItemDisplayBinding="{Binding Descricao}"  />
             </VerticalStackLayout>
         </Frame>
         <Button Text="Pagar" Clicked="BotaoPagar_Clicked" Margin="10" TextColor="White" />

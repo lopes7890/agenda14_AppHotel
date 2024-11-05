@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.pagamento"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Primary}">
+    <VerticalStackLayout>
+        <Frame Padding="10" Margin="10">
+            <VerticalStackLayout>
+
+                <Label Text="Escolha o método de pagamento"
+               TextTransform="Uppercase"
+               FontSize="Subtitle"
+               TextColor="{StaticResource Primary}"/>
+
+                <Picker x:Name="pck_pagamento"
+                Title="Selecione uma opção"
+                ItemDisplayBinding="{Binding Descricao}"/>
+            </VerticalStackLayout>
+        </Frame>
+        <Button Text="Pagar" Clicked="BotaoPagar_Clicked" Margin="10" TextColor="White" />
+    </VerticalStackLayout>
+</ContentPage>

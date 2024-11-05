@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.telaSobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Primary}">
+
+    <VerticalStackLayout Margin="20" Padding="10">
+
+        <Frame Padding="10" Margin="20" BackgroundColor="Transparent" BorderColor="White">
+            <VerticalStackLayout>
+                <Label
+                    Text="Desenvolvedor:"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    FontSize="Large"
+                    TextColor="white"/>
+                <Label
+                    Text="Allison Lopes da Silva Bosco"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    FontSize="Medium"
+                    TextColor="white"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Frame Padding="10" Margin="20" BackgroundColor="Transparent" BorderColor="White">
+            <VerticalStackLayout>
+                <Label
+                    Text="Ferramentas utilizadas:"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    FontSize="Large"
+                    TextColor="white"/>
+                <Label
+                    Text=".NET MAUI"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    FontSize="Medium"
+                    TextColor="white"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Frame Padding="10" Margin="20">
+            <VerticalStackLayout>
+                <Label
+                    Text="Data de criação:"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    FontSize="Large"
+                    TextColor="{StaticResource Primary}"/>
+                <Label
+                    Text="02/11/2024"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    FontSize="Medium"
+                    TextColor="{StaticResource Primary}"/>
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

@@ -7,8 +7,23 @@ public partial class HospedagemContratada : ContentPage
 		InitializeComponent();
 	}
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private async void Button_Clicked(object sender, EventArgs e)
     {
-		Navigation.PopAsync();
+		try
+		{
+			Navigation.PopAsync();
+		}
+		catch (Exception ex) 
+		{
+			DisplayAlert("ops", ex.Message, "ok");
+
+		}
     }
+	private async void Pagar_Clicked(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new pagamento()
+		{
+
+		});
+	}
 }
